@@ -1,5 +1,5 @@
 # Coderhouse-german-blog
-Ejemplo de Clased Based Views
+Ejemplo de Class Based Views
 
 Para poder correr el ejemplo asegurese que tiene django instalado en su pc, luego ejecute los siguientes pasos:
 
