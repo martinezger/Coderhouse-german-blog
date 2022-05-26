@@ -1,0 +1,14 @@
+<a href="{% url 'blog_create' %}">Agregar</a>
+
+{% if object_list %}
+    {% for blog in object_list %}
+    <li>
+        {{blog.titulo}}
+        <a href="{% url 'blog_detail' blog.id %}">Detalle</a>
+        <a href="{% url 'blog_delete' blog.id %}">Borrar</a>
+        <a href="{% url 'blog_update' blog.id %}">Actualizar</a>
+    </li>
+    {% endfor %}
+{% else %}
+  <h1> No hay blogs</h1>
+{% endif %}
