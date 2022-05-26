@@ -8,5 +8,5 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-Luego ingrese a [http://localhost:8000/blog](localhost:8000/blog)
+Luego ingrese a [http://localhost:8000/blog](http://localhost:8000/blog)
 
