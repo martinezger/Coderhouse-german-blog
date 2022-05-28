@@ -1,12 +1,19 @@
-<a href="{% url 'blog_create' %}">Agregar</a>
+{% if user.is_authenticated %}
+  <a href="{% url 'blog_logout' %}">Salir</a>
+  <a href="{% url 'blog_create' %}">Agregar</a>
+{% else %}
+  <a href="{% url 'blog_login' %}">Entrar</a>
+{% endif %}
 
 {% if object_list %}
     {% for blog in object_list %}
     <li>
-        {{blog.titulo}}
-        <a href="{% url 'blog_detail' blog.id %}">Detalle</a>
-        <a href="{% url 'blog_delete' blog.id %}">Borrar</a>
-        <a href="{% url 'blog_update' blog.id %}">Actualizar</a>
+        
+        <a href="{% url 'blog_detail' blog.id %}">{{blog.titulo}}</a>
+        {% if user.is_authenticated %}
+          <a href="{% url 'blog_delete' blog.id %}">Borrar</a>
+          <a href="{% url 'blog_update' blog.id %}">Actualizar</a>
+        {% endif %}
     </li>
     {% endfor %}
 {% else %}
