@@ -1,0 +1,9 @@
+<a href="{% url 'blog_list' %}">Volver a Lista Blogs</a>
+<a href="{% url 'blogger_edit' user.id %}">Editar Perfil</a>
+
+<ul>
+    <li>Nombre: {{object.first_name}}<li>
+    <li>Apellido: {{object.last_name}}<li>
+    <li>Correo electronico: {{object.email}} </li>
+    <li>Nombre de Usuario: {{object.username}}</li>
+</ul>
