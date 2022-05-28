@@ -1,10 +1,11 @@
 {% if user.is_authenticated %}
   <a href="{% url 'blog_logout' %}">Salir</a>
-  <a href="{% url 'blog_create' %}">Agregar</a>
+  <a href="{% url 'blog_create' %}">Nuevo Blog</a>
 {% else %}
   <a href="{% url 'blog_login' %}">Entrar</a>
-{% endif %}
   <a href="{% url 'blog_signup' %}">Crear Cuenta</a>
+{% endif %}
+  
 
 {% if object_list %}
     {% for blog in object_list %}
