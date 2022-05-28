@@ -4,6 +4,7 @@
 {% else %}
   <a href="{% url 'blog_login' %}">Entrar</a>
 {% endif %}
+  <a href="{% url 'blog_signup' %}">Crear Cuenta</a>
 
 {% if object_list %}
     {% for blog in object_list %}
