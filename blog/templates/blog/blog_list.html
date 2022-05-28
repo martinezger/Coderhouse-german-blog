@@ -1,7 +1,7 @@
 {% if user.is_authenticated %}
   <a href="{% url 'blog_logout' %}">Salir</a>
   <a href="{% url 'blog_create' %}">Nuevo Blog</a>
-  <a href="{% url 'blogger_profile' user.id %}">Perfil</a>
+  <a href="{% url 'blogger_profile' user.id %}">Perfil {{user.username}}</a>
 {% else %}
   <a href="{% url 'blog_login' %}">Entrar</a>
   <a href="{% url 'blogger_signup' %}">Crear Cuenta</a>
