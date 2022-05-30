@@ -132,3 +132,5 @@ test_result.xml
 
 *.sqlite
 *.sqlite3
+
+.vscode/
