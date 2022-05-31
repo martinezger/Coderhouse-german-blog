@@ -1,3 +1,4 @@
+<a href="{% url 'blog_list' %}">Volver a Lista</a>
 <form method="post">{% csrf_token %}
     <p>¿Está Seguro que quiere borrar "{{ object }}"?</p>
     {{ form }}
