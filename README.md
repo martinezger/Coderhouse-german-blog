@@ -10,3 +10,7 @@ python manage.py runserver
 
 Luego ingrese a [http://localhost:8000/blog](http://localhost:8000/blog)
 
+# Site Maps
+
+![Con Login](./site_map.drawio.png)
+![Sin Login](./site_map2.drawio.png)
