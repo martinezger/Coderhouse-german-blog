@@ -1,0 +1,25 @@
+{
+  "name": "CoderBlogger",
+  "description": "Multi-user Blogging system",
+  "repository": "https://github.com/martinezger/Coderhouse-german-blog",
+  "logo": "https://jobs.coderhouse.com/assets/logos_coderhouse.png",
+  "keywords": ["django", "blog", "coderhouse"],
+  "env": {
+    "SECRET": {
+      "description": "Genera un secret automático.",
+      "generator": "secret"
+    },
+    "ALLOWED_HOSTS": {
+      "description": "Puede dejar el * o ingresar > nombre-que-elegiste-mas-arriba.herokuapp.com",
+      "value": "*"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "11"
+      }
+    }
+  ]
+}
