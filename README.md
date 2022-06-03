@@ -16,3 +16,4 @@ Luego ingrese a [http://localhost:8000/blog](http://localhost:8000/blog)
 ![Sin Login](./site_map2.drawio.png)
 
 fin
+otro cambio
